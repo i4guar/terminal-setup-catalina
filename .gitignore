@@ -1,0 +1,8 @@
+gnore everything
+*
+
+# But not these files...
+!.gitignore
+!.zshrc
+!.vimrc
+!Dracula.terminal
