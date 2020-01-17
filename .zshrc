@@ -1,6 +1,9 @@
 #flutter
 export PATH="$PATH:/Users/felix/flutter/bin"
 
+#AFTER CHANGE run
+alias cu="source ~/.zshrc"
+
 #https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
 
 autoload -Uz vcs_info
@@ -16,7 +19,7 @@ alias home='cd ~'
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
-
+alias cs="vim ~/.zshrc"			    # cs: view and edit config file from anywhere
 
 #https://gist.githubusercontent.com/natelandau/10654137/raw/32eb964560873a8c23d7745de2736bef437524ba/.bash_profile
 
@@ -43,10 +46,16 @@ alias fix_stty='stty sane'                  # fix_stty:     Restore terminal set
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
 
-#git
+#git commands
 alias gs='git status'
+alias ga='git add .'
+alias gc='git commit'
 alias gcam='git commit -a -m'
 alias gp='git push'
+alias gd='git diff'
+alias gl='git log'
+alias gr='git reset --hard'
+
 
 #flutter dev
 alias ios='open -a Simulator' #opens ios emulator
